@@ -10,7 +10,7 @@ import Component1 from './component1'
 import Component2 from './component2'
 import Component3 from './component3'
 
-var CustomSceneConfig = function(state){
+const CustomSceneConfig = function(state){
     if(!state) {
         state = "PushFromRight"
     }
@@ -36,8 +36,7 @@ export class App extends Component {
     }
 
     render() {
-        const _this = this;
-        var navigatorProps = {
+        const navigatorProps = {
             initialRoute: {name:"Home"},
             renderScene: (route, navigator) => {
                 var _this = this;

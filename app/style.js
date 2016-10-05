@@ -1,11 +1,10 @@
-'use strict';
 import React, {
     StyleSheet,
     Dimensions,
     Platform
 } from 'react-native';
 
-var StateBarHeight;
+let StateBarHeight;
 if(Platform.OS == "ios") {
     StateBarHeight = 20
 } else {
